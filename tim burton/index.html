@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tim Burton - Tribute</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url(https://fonts.googleapis.com/css?family=Creepster);
+body {
+  margin: 0;
+  background-color: #1a1024;
+}
+
+#main {
+  background-color: #EEEEEE;
+  margin: 30px 0;
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#title {
+  font-size: 150%;
+  padding-top: 50px;
+}
+
+#title h1 {
+  color: #ff7518;
+}
+
+#img-div {
+  background-color: white;
+  margin: 40px 20px;
+  padding: 20px 10px;
+}
+
+img {
+  margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tribute-info {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+  #tribute-info {
+    width: 90%;
+  }
+}
+
+#tribute-info :not(h3) {
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+h3, ul {
+  margin-bottom: 40px;
+}
+
+ul li {
+  margin: 15px 0;
+}
+
+.disclaimer {
+  margin-top: 30px;
+}
+
+ul li strong {
+  font-weight: 600;
+}
+
+footer {
+  padding: 5px;
+  line-height: 1.5rem;
+}
+a.dugme {
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 70px;
+  margin: 30px auto;
+  z-index: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 70px;
+  font-family: 'Squada One', cursive;
+  font-size: 28px;
+}
+a.dugme:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
+  background-size: 400% 400%;
+  -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  -webkit-animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+  animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+}
+a.dugme > span {
+  display: block;
+  background: linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: gradient 3s ease-in-out infinite;
+  animation: gradient 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% { background-position: 14% 0%; }
+  50% { background-position: 87% 100%; }
+  100% { background-position: 14% 0%; }
+}
+@keyframes gradient {
+  0% { background-position: 14% 0%; }
+  50% { background-position: 87% 100%; }
+  100% { background-position: 14% 0%; }
+}
+@-webkit-keyframes border {
+  0% { -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%); }
+  25% { -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%); }
+  50% { -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%); }
+  75% { -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%); }
+  100% { -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%); }
+}
+@keyframes border {
+  0% { clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%); }
+  25% { clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%); }
+  50% { clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%); }
+  75% { clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%); }
+  100% { clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%); }
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div id="main">
+  <header>
+    <div id="title">
+      <h1>Tim Burton</h1>
+      <p>Majstor mračne mašte i gotičke fantazije</p>
+    </div>
+    <figure id="img-div">
+      <img src="timburton.jpg" alt= id="image" width ="400">
+     
+      </a>.</figcaption>
+    </figure>
+  </header>
+
+  <main id="tribute-info">
+    <h3>Rani uspjeh:</h3>
+    <ul>
+      <li><strong>1958.</strong> Rođen u Burbanku u Kaliforniji</li>
+      <li><strong>1982.</strong> Kratki animirani film Vincent</li>
+      <li><strong>1985.</strong> Debi kao režiser dugometražnog filma Pee-wee's Big Adventure</li>
+      <li><strong>1988.</strong> Beetlejuice</li>
+      <li><strong>1989.</strong> Batman</li>
+      <li><strong>1990.</strong> Edward Scissorhands</li>
+      <li><strong>1993.</strong> The Nightmare Before Christmas (autor ideje i producent)</li>
+      <li><strong>1994.</strong> Ed Wood</li>
+      <li><strong>2005.</strong> Corpse Bride i Charlie and the Chocolate Factory</li>
+      <li><strong>2007.</strong> Sweeney Todd</li>
+      <li><strong>2010.</strong> Alice in Wonderland</li>
+      <li><strong>2022.</strong> Serija Wednesday</li>
+      <li><strong>2024.</strong> Beetlejuice Beetlejuice</li>
+    </ul>
+
+    <figure>
+      <p><em>"Filmski stvaratelj Tim Burton dobio je 2788. zvijezdu na holivudskoj Stazi slavnih 3. septembra 2024. godine."</em></p>
+      <figcaption><em>-- Hollywood Walk of Fame</em></figcaption>
+    </figure>
+
+    <p class="disclaimer"><small>*Timeline details courtesy of <a href="https://www.remindmagazine.com/wp-content/uploads/2024/09/tim-burton-walk-of-fame-star-1420x798.jpg">Tim Burton</a></small>.</p>
+  </main>
+  <a href="#" target="_blank" class="dugme"><span>dugme</span></a>
+
+  <footer>
+    <h3>Ako imate vremena, trebali biste pročitati više o ovom nevjerojatno talentiranom filmskom stvaratelju na:<a href="https://en.wikipedia.org/wiki/Tim_Burton" id="tribute-link" target="_blank">Wikipedia entry</a>.</h3>
+  </footer>
+</div>
+</body>
+</html>
